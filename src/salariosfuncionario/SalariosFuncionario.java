@@ -9,7 +9,11 @@ public class SalariosFuncionario {
     Scanner input = new Scanner(System.in);
     System.out.println("Entre com quantidade de funcionários:");
     int qtdFuncionarios = input.nextInt();
-    
+     while (qtdFuncionarios <= 0) {
+       System.out.println("Quantidade de funcionários não pode ser menor ou igual a zero!");
+       System.out.println("Entre com quantidade de funcionários:");
+       qtdFuncionarios = input.nextInt();
+     }
     int codFuncionario = 1;
     double salarioTotal = 0.0;
     
