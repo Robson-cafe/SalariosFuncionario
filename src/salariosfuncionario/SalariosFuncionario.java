@@ -10,15 +10,15 @@ public class SalariosFuncionario {
     System.out.println("Entre com quantidade de funcionários:");
     int qtdFunciionarios = input.nextInt();
     
-    int codFuncionaro = 1;
+    int codFuncionario = 1;
     double salarioTotal = 0.0;
     
     
-    while (codFuncionaro <= qtdFunciionarios) {     
-      System.out.printf("Entre com o salário do empregado: %d%n", codFuncionaro);
+    while (codFuncionario <= qtdFunciionarios) {     
+      System.out.printf("Entre com o salário do empregado: %d%n", codFuncionario);
       double salario = input.nextDouble();
       salarioTotal += salario;
-      codFuncionaro++;
+      codFuncionario++;
     }
     double mediaSalarial = salarioTotal / qtdFunciionarios;
     
